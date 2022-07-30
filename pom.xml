@@ -48,5 +48,12 @@
 			</plugin>
 		</plugins>
 	</build>
-
+<distributionManagement>
+        <snapshotRepository>
+                 <!--id must be consistent with the server id in the setting.xml file-->
+                <id>maven-snapshots</id>
+                <name>Nexus Snapshot Repository</name>
+                <url>http://184.73.11.22:8081/repository/offers</url>
+        </snapshotRepository>
+</distributionManagement>
 </project>
